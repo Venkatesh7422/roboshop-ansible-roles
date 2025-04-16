@@ -1,6 +1,6 @@
 - name: install remi release
   ansible.builtin.dnf: # check pacakge will work not
-    name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+    name: https://rpms.remirepo.net/enterprise/8/remi/x86_64/remi-release-8.3-1.el8.remi.noarch.rpm
     state: present
     disable_gpg_check: true
   
@@ -23,6 +23,7 @@
     name: redis
     state: restarted
     enabled: yes
+
 
 
 
