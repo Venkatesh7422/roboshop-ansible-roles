@@ -1,11 +1,11 @@
 - name: install remi release
   ansible.builtin.dnf: # check pacakge will work not
-    name: https://rpms.remirepo.net/enterprise/8/remi/x86_64/remi-release-8.3-1.el8.remi.noarch.rpm
+    name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
     state: present
     disable_gpg_check: true
   
 - name: enable redis
-  ansible.builtin.command: dnf module enable redis -y
+  ansible.builtin.command: dnf module enable redis:remi-6.2 -y
 
 - name: install redis
   ansible.builtin.dnf:
