@@ -1,4 +1,4 @@
-MONGODB_HOST: mongodb.venky.shop
+MONGODB_HOST: mongodb.venky.shop # submit your host
 REDIS_HOST: redis.venky.shop
 MYSQL_HOST: mysql.venky.shop
 RABBITMQ_HOST: rabbitmq.venky.shop

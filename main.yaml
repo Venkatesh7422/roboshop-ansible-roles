@@ -1,7 +1,7 @@
 - name: "install {{component}}"
   hosts: "{{component}}"
-  vars:
-    MONGODB_HOST: mongodb.venky.shop
+  vars_files:
+  - variables.yaml
   become: yes
   roles:
   - "{{component}}"
